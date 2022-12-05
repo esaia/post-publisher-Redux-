@@ -29,7 +29,10 @@ const AddNew = () => {
   const canSave = title && content && userID !== null;
 
   return (
-    <form className=" p-2 m-2 flex flex-col w-[400px]" onSubmit={handleSubmit}>
+    <form
+      className=" p-2 flex flex-col w-full md:w-[400px]"
+      onSubmit={handleSubmit}
+    >
       <input
         type="text"
         className="border border-sky-500 outline-none px-2 py-1 m-2"

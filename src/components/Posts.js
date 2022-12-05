@@ -25,11 +25,11 @@ const Posts = () => {
   ];
 
   return (
-    <div className="p-4 flex flex-wrap items-center justify-center">
+    <div className=" flex flex-wrap items-center justify-center">
       {posts.map((post) => {
         return (
           <div
-            className="w-[200px] border border-sky-500 border-5 p-2 m-2 relative"
+            className="w-[180px] border border-sky-500 border-5 p-2 m-[2px] md:m-2 relative"
             key={post.id}
           >
             <button
