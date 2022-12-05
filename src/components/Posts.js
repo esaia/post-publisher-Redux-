@@ -48,10 +48,10 @@ const Posts = () => {
               {moment(post?.date).fromNow()}
             </p>
 
-            <div className="flex justify-between ">
+            <div className="flex justify-between items-center ">
               {reactions.map((reaction) => {
                 return (
-                  <div key={reaction[0]} className="flex gap-1">
+                  <div key={reaction[0]} className="flex gap-1 text-sm">
                     <button
                       onClick={() =>
                         dispatch(
@@ -64,7 +64,7 @@ const Posts = () => {
                     >
                       {reaction[1]}
                     </button>
-                    <button>{post.reactions[reaction[0]]}</button>
+                    <p className="text-sm">{post.reactions[reaction[0]]}</p>
                   </div>
                 );
               })}
